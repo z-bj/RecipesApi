@@ -5,11 +5,13 @@ import { Ingredients } from "../Ingredients/Ingredients";
 
 export function Site() {
   const [page, setPage] = useState("ingredients");
-  const { ingredients, fetchIngredients } = useIngredients();
+  const { ingredients, deleteIngredient, fetchIngredients } = useIngredients();
 
   let content = null;
   if (page === "ingredients") {
-    content = <Ingredients ingredients={ingredients} />;
+    content = (
+      <Ingredients ingredients={ingredients} onDelete={deleteIngredient} />
+    );
   }
 
   useEffect(

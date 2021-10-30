@@ -1,0 +1,9 @@
+import React from "react";
+
+export function Loader({ size }) {
+  return (
+    <div className={"spinner-border spinner-border-" + size} role="satus">
+      <span className="sr-only">Loading...</span>
+    </div>
+  );
+}

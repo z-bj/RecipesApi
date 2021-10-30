@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { ApiErrors, apiFetch } from "../utils/api";
+import { Button } from "../ui/Button";
 
 export const LoginForm = ({ onConnect }) => {
   const [error, setError] = useState(null);
@@ -52,6 +53,9 @@ export const LoginForm = ({ onConnect }) => {
           required
         />
       </div>
+      <Button type="submit" loading={loading}>
+        Se connecter
+      </Button>
       <button disabled={loading} type="submit" className="btn btn-primary">
         Se connecter
       </button>
