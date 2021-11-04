@@ -4,20 +4,32 @@ This project was bootstrapped with Create React App.
 
 
 ### To start server:
-- cd api
-- yarn install
-- yarn run build
-- yarn run dev
+`cd api`
+
+`yarn install`
+
+`yarn run build`
+
+`yarn run dev`
+
 Open http://localhost:3333 to view it in the browser.
 
-### to start front:
-- cd front
-- yarn start
+### To start front:
+`cd front`
+
+`yarn start`
+
+Runs the app in the development mode.
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
 
 
 
 # Structure of the front
-
 ### App
 - user
 
@@ -57,14 +69,6 @@ Open http://localhost:3333 to view it in the browser.
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
 ### `yarn test`
 
@@ -120,4 +124,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# RecipesApi
