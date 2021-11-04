@@ -1,6 +1,6 @@
 # RecipesApi
 
-# Demo
+## Demo
 
 ![Demo](https://github.com/BjzArchi/RecipesApi/blob/master/Loom-_-RecipesApi.gif)
 
@@ -32,41 +32,47 @@ You will also see any lint errors in the console.
 
 
 
+## StateVariable
+  
+Data (props) goes down⬇️,
+State comes up⬆️
 
-# Structure of the front
-### App
+
+## Structure
+
+App
 - user
 
-### LoginForm
+LoginForm
 - error
 - loading
 - ⬆️ onConnect(user)
 
-### Site
+Site
 - page
 - ingredients
 - recipes
 - currentRecipe
 
-### Recipes
+Recipes
 - ⬇️ recipes
 
-### RecipeDetail
+RecipeDetail
 - ⬇️ id
 - ⬇️ recipe
 
-### RecipeEditForm
+RecipeEditForm
 - ⬇️ recipe
 - ⬇️ ingredients
 - ⬆️ onSubmit(recipe, newRecipe)
 
-### Ingredients
+Ingredients
 - ⬇️ ingredients
 - ⬆️ onUpdate(ingredient, newIngredient)
 - ⬆️ onDelete(ingredient)
 - ⬆️ onCreate(ingredient)
 
-### RecipeCreateForm
+RecipeCreateForm
 - ⬇️ ingredients
 - ⬆️ onSubmit(newRecipe)
 
