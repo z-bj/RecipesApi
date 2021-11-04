@@ -2,7 +2,7 @@
 
 # Demo
 
-![Demo](https://github.com/BjzArchi/RecipesApi/blob/master/DemoEndRecipesApi.gif)
+![Demo](https://github.com/BjzArchi/RecipesApi/blob/master/Loom-_-RecipesApi.gif)
 
 This project was bootstrapped with Create React App.
 
