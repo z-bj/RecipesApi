@@ -31,14 +31,12 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 
-
-## StateVariable
+## Structure
+### StateVariable
   
 Data (props) goes down⬇️,
 State comes up⬆️
 
-
-## Structure
 
 App
 - user
