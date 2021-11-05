@@ -3,22 +3,28 @@
 
 ### Objectives:
 
-This is a Front-End app to manage cooking recipes and that will allow to persist these recipes on a server.
+This is a Front-End app to manage cooking recipes and that will allow to **persist these recipes on a server**.
 
-The back-end is provided and managed with the **Adonis node-js framework & the DB is managed with sqlite**.
+**Back-end** is provided and managed with the **Adonis node-js framework**
 
-In a first time I configured the user's **authentification system**.
+& 
 
-It is simply be **based on a cookie system**.
+**DB** is managed with **SQLite**.
 
-After sign in, we arrive on the list of recipes.
+In a first time I configured the user's **authentification system**,
+this simply based on a **cookie system**.
+
+After Sign-in, we arrive on the list of recipes.
 
 Here we have the possibility to consult any of these recipes and edit them in Live.
 
 Automatically when saving ,the data are persisted on the server and if we update the page, the recipe is updated.
+
 You can also manage the ingredients that will be used in the different recipes as well as modify the quantities and units of measurement of the recipes.
 
 We can also add new recipes.
+
+The fields that have not been filled in will display an error message reminding the user what he needs to complete.
 
 ### Demo
 
