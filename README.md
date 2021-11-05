@@ -3,7 +3,7 @@
 
 ### Objectives:
 
-This is a Front-End app to manage cooking recipes and that will allow to **persist these recipes on a server**.
+This is a front-end app to create & manage cooking recipes, it will allow **persisting these on a server**.
 
 **Back-end** is provided and managed with the **Adonis node-js framework**
 
