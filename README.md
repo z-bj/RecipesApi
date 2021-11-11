@@ -1,4 +1,4 @@
-# RecipesApi
+# Recipes Api
 **A Cooking recipe management app**
 
 ### Objectives:
