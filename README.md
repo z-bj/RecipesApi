@@ -1,116 +1,80 @@
-# Recipes Api
-**A Cooking recipe management app**
-
-### Objectives:
-
-This is a front-end app to create & manage cooking recipes, it will allow **persisting these on a server**.
-
-**Back-end** is provided and managed with the **Adonis node-js framework**
-
-& 
-
-**DB** is managed with **SQLite**.
-
-In a first time I configured the user's **authentification system**,
-this simply based on a **cookie system**.
-
-After Sign-in, we arrive on the list of recipes.
-
-Here we have the possibility to consult any of these recipes and edit them in Live.
-
-Automatically when saving ,the data are persisted on the server and if we update the page, the recipe is updated.
-
-You can also manage the ingredients that will be used in the different recipes as well as modify the quantities and units of measurement of the recipes.
-
-We can also add new recipes.
-
-The fields that have not been filled in will display an error message reminding the user what he needs to complete.
-
-### Demo
-
-![Demo](https://github.com/BjzArchi/RecipesApi/blob/master/Loom-_-RecipesApi.gif)
+# Recipes API
+![Typescript](https://img.shields.io/badge/Typescript-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) ![AdonisJS](https://img.shields.io/badge/AdonisJS-220052?style=for-the-badge&logo=adonisjs&logoColor=white) ![Create React App](https://img.shields.io/badge/Create%20React%20App-000000?style=for-the-badge&logo=create-react-app&logoColor=white)
 
 
-###  CRUD API
+A cooking recipe management app that allows users to create and manage recipes, and persist them on a server. The back-end is provided and managed with the Adonis Node.js framework, and the database is managed with SQLite.
 
-To Sign in, the App calls the Endpoint => **/login** and pass it the user and password.
+## Features
 
-The Api allows to consult the different recipes, we access it on the endpoint => **/recipes**.
+-   User authentication system based on cookie
+-   List of recipes with the possibility to consult and edit them in live
+-   Ability to manage ingredients used in different recipes, and modify the quantities and units of measurement of the recipes
+-   Add new recipes, with fields validation
+-   API for CRUD operations on recipes and ingredients
 
-there is also an Api to consult a particular recipe, to access to the first one, type => **/recipes/1**
+## Demo
 
-and there is the same thing for the ingredients. => **/ingredients**
+[Demo Link](https://recipes-api-zbj.netlify.app/)
 
-For the moment it is a relatively classic **CRUD API**.
+## Installation
 
-This project was bootstrapped with **Create React App**.
+To start the server, navigate to the api folder and run the following commands:
 
-UI is crafted with **Bootstrap** classes.
+Copy code
 
-### To start server:
-`cd api`
+`yarn install yarn run build yarn run dev`
 
-`yarn install`
+Then, to start the front-end app, navigate to the front folder and run:
 
-`yarn run build`
+sqlCopy code
 
-`yarn run dev`
+`yarn install yarn start`
 
-Open http://localhost:3333 to view it in the browser.
-
-### To start front:
-`cd front`
-
-`yarn start`
-
-Runs the app in the development mode.
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
+The app will run on [http://localhost:3000](http://localhost:3000/).
 
 ## Structure
-### StateVariable
-  
-Data (props) goes down⬇️,
-State comes up⬆️
 
+The app's state is structured as follows:
 
-App
-- user
+-   App
+    -   user
+    -   LoginForm
+        -   onConnect(user)
+    -   Site
+        -   page
+        -   ingredients
+        -   recipes
+        -   currentRecipe
+        -   Recipes
+            -   recipes
+        -   RecipeDetail
+            -   id
+            -   recipe
+        -   RecipeEditForm
+            -   recipe
+            -   ingredients
+            -   onSubmit(recipe, newRecipe)
+        -   Ingredients
+            -   ingredients
+            -   onUpdate(ingredient, newIngredient)
+            -   onDelete(ingredient)
+            -   onCreate(ingredient)
+        -   RecipeCreateForm
+            -   ingredients
+            -   onSubmit(newRecipe)
 
-LoginForm
-- error
-- loading
-- ⬆️ onConnect(user)
+## Technologies Used
 
-Site
-- page
-- ingredients
-- recipes
-- currentRecipe
+This project was bootstrapped with Create React App and uses Bootstrap classes for UI. The Adonis framework is used for back-end development and SQLite for database management.
 
-Recipes
-- ⬇️ recipes
+## APIs
 
-RecipeDetail
-- ⬇️ id
-- ⬇️ recipe
+The following APIs are available:
 
-RecipeEditForm
-- ⬇️ recipe
-- ⬇️ ingredients
-- ⬆️ onSubmit(recipe, newRecipe)
+-   /login: Endpoint for user authentication
+-   /recipes: API for CRUD operations on recipes
+-   /ingredients: API for CRUD operations on ingredients
 
-Ingredients
-- ⬇️ ingredients
-- ⬆️ onUpdate(ingredient, newIngredient)
-- ⬆️ onDelete(ingredient)
-- ⬆️ onCreate(ingredient)
+## License
 
-RecipeCreateForm
-- ⬇️ ingredients
-- ⬆️ onSubmit(newRecipe)
-
+This project is licensed under the MIT License - see the LICENSE.md file for details.
