@@ -14,6 +14,8 @@ A cooking recipe management app that allows users to create and manage recipes, 
 
 ## Demo
 
+![Demo](https://github.com/BjzArchi/RecipesApi/blob/master/Loom-_-RecipesApi.gif)
+
 [Demo Link](https://recipes-api-zbj.netlify.app/)
 
 ## Installation
