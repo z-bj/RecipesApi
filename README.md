@@ -22,13 +22,11 @@ A cooking recipe management app that allows users to create and manage recipes, 
 
 To start the server, navigate to the api folder and run the following commands:
 
-Copy code
 
 `yarn install yarn run build yarn run dev`
 
 Then, to start the front-end app, navigate to the front folder and run:
 
-sqlCopy code
 
 `yarn install yarn start`
 
